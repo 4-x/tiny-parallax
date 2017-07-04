@@ -1,0 +1,140 @@
+/* CSS variables at the root of the document */
+html {
+  --scroll: 0;
+  --v-direction: 0;
+  --h-direction: 0;
+  --v-offset: 0;
+  --h-offset: 0;
+  --v-speed: 0;
+  --h-speed: 0;
+  --top-position: 0px;
+}
+
+[class*="par-"] {
+  --h-velocity: calc(var(--h-speed) * var(--h-direction));
+  --v-velocity: calc(var(--v-speed) * var(--v-direction));
+  --h-offset: calc(var(--top-position) * var(--v-speed));
+  --v-offset: calc(var(--top-position) * var(--v-speed));
+
+  transform: translate3d(calc(calc(var(--scroll) - var(--top-position)) * var(--h-velocity)), calc(calc(var(--scroll) - var(--top-position)) * var(--v-velocity)),0);
+
+}
+[class*="par-up"] {
+  --v-direction: -1;
+}
+[class*="par-down"] {
+  --v-direction: 1;
+}
+[class*="par-left"] {
+  --h-direction: -1;
+}
+[class*="par-right"] {
+  --h-direction: 1;
+}
+
+[class*="par"][class*="left-00"],[class*="par"][class*="right-00"] {
+      --h-speed: 0;
+  }
+  [class*="par"][class*="left-01"],[class*="par"][class*="right-01"] {
+      --h-speed: 0.1;
+  }
+  [class*="par"][class*="left-02"],[class*="par"][class*="right-02"] {
+      --h-speed: 0.2;
+  }
+  [class*="par"][class*="left-03"],[class*="par"][class*="right-03"] {
+      --h-speed: 0.3;
+  }
+  [class*="par"][class*="left-04"],[class*="par"][class*="right-04"] {
+      --h-speed: 0.4;
+  }
+  [class*="par"][class*="left-05"],[class*="par"][class*="right-05"] {
+      --h-speed: 0.5;
+  }
+  [class*="par"][class*="left-06"],[class*="par"][class*="right-06"] {
+      --h-speed: 0.6;
+  }
+  [class*="par"][class*="left-07"],[class*="par"][class*="right-07"] {
+      --h-speed: 0.7;
+  }
+  [class*="par"][class*="left-08"],[class*="par"][class*="right-08"] {
+      --h-speed: 0.8;
+  }
+  [class*="par"][class*="left-09"],[class*="par"][class*="right-09"] {
+      --h-speed: 0.9;
+  }
+  [class*="par"][class*="left-10"],[class*="par"][class*="right-10"] {
+      --h-speed: 1;
+  }
+  [class*="par"][class*="left-11"],[class*="par"][class*="right-11"] {
+      --h-speed: 1.1;
+  }
+  [class*="par"][class*="left-12"],[class*="par"][class*="right-12"] {
+      --h-speed: 1.2;
+  }
+  [class*="par"][class*="left-13"],[class*="par"][class*="right-13"] {
+      --h-speed: 1.3;
+  }
+  [class*="par"][class*="left-14"],[class*="par"][class*="right-14"] {
+      --h-speed: 1.4;
+  }
+  [class*="par"][class*="left-15"],[class*="par"][class*="right-15"] {
+      --h-speed: 1.5;
+  }
+  [class*="par"][class*="left-16"],[class*="par"][class*="right-16"] {
+      --h-speed: 1.6;
+  }
+  [class*="par"][class*="left-17"],[class*="par"][class*="right-17"] {
+      --h-speed: 1.7;
+  }
+  [class*="par"][class*="left-18"],[class*="par"][class*="right-18"] {
+      --h-speed: 1.8;
+  }
+  [class*="par"][class*="left-19"],[class*="par"][class*="right-19"] {
+      --h-speed: 1.9;
+  }
+  [class*="par"][class*="left-20"],[class*="par"][class*="right-20"] {
+      --h-speed: 2;
+  }
+[class*="par"][class*="up-00"],[class*="par"][class*="down-00"] {
+      --v-speed: 0;
+  }[class*="par"][class*="up-01"],[class*="par"][class*="down-01"] {
+      --v-speed: 0.1;
+  }[class*="par"][class*="up-02"],[class*="par"][class*="down-02"] {
+      --v-speed: 0.2;
+  }[class*="par"][class*="up-03"],[class*="par"][class*="down-03"] {
+      --v-speed: 0.3;
+  }[class*="par"][class*="up-04"],[class*="par"][class*="down-04"] {
+      --v-speed: 0.4;
+  }[class*="par"][class*="up-05"],[class*="par"][class*="down-05"] {
+      --v-speed: 0.5;
+  }[class*="par"][class*="up-06"],[class*="par"][class*="down-06"] {
+      --v-speed: 0.6;
+  }[class*="par"][class*="up-07"],[class*="par"][class*="down-07"] {
+      --v-speed: 0.7;
+  }[class*="par"][class*="up-08"],[class*="par"][class*="down-08"] {
+      --v-speed: 0.8;
+  }[class*="par"][class*="up-09"],[class*="par"][class*="down-09"] {
+      --v-speed: 0.9;
+  }[class*="par"][class*="up-10"],[class*="par"][class*="down-10"] {
+      --v-speed: 1;
+  }[class*="par"][class*="up-11"],[class*="par"][class*="down-11"] {
+      --v-speed: 1.1;
+  }[class*="par"][class*="up-12"],[class*="par"][class*="down-12"] {
+      --v-speed: 1.2;
+  }[class*="par"][class*="up-13"],[class*="par"][class*="down-13"] {
+      --v-speed: 1.3;
+  }[class*="par"][class*="up-14"],[class*="par"][class*="down-14"] {
+      --v-speed: 1.4;
+  }[class*="par"][class*="up-15"],[class*="par"][class*="down-15"] {
+      --v-speed: 1.5;
+  }[class*="par"][class*="up-16"],[class*="par"][class*="down-16"] {
+      --v-speed: 1.6;
+  }[class*="par"][class*="up-17"],[class*="par"][class*="down-17"] {
+      --v-speed: 1.7;
+  }[class*="par"][class*="up-18"],[class*="par"][class*="down-18"] {
+      --v-speed: 1.8;
+  }[class*="par"][class*="up-19"],[class*="par"][class*="down-19"] {
+      --v-speed: 1.9;
+  }[class*="par"][class*="up-20"],[class*="par"][class*="down-20"] {
+      --v-speed: 2;
+  }
