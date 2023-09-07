@@ -1,7 +1,7 @@
 # Tiny Parallax
 An ultra-lightweight parallax library powered by CSS variables
 
-Read more [here](https://4-x.github.io/css-variables)
+Read more [here](https://gist.github.com/4-x/e0b31777ca0387f9a6c47d2c5d60b6bb)
 
 ## How to use it
 Include `tiny-parallax.css` and `tiny-parallax.js` in your page.
